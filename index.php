@@ -3,7 +3,14 @@ class Movie {
   public $title;
   public $genre;
   public $lang;
+
+  function __construct($_title) {
+    $this->title = $_title;
+  }
 }
+
+$movie1 = new Movie('Ritorno al futuro');
+echo $movie1->title;
 ?>
 
 <!DOCTYPE html>
@@ -15,6 +22,6 @@ class Movie {
   <title>PHP OOP 1</title>
 </head>
 <body>
-  
+
 </body>
 </html>
